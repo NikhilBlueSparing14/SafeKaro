@@ -43,7 +43,7 @@ const Home = () => {
 
   return (
     <section id='Home' className='home'>
-      <img className='background-image' src={imgSrc} alt='background' />
+       <img className='background-image' src={imgSrc} alt='background' />
       <div className='overlay'></div>
       <div className='content'>
         <div className={`hero-text ${fadeIn ? 'fade-in' : 'fade-out'}`}>
