@@ -1,5 +1,5 @@
 .main-aboutus {
-  height: 80vh;
+  height: 100vh;
   background-color: #fff;
   text-align: left;
   padding-top: 80px; /* To ensure it doesn't overlap with the navbar */
@@ -8,7 +8,7 @@
 }
 
 .about {
-  width: 80%;
+  width: 100vw;
   margin: auto;
   padding: 30px ;
   position: relative;
@@ -60,7 +60,7 @@
 /* Large screens */
 @media (max-width: 1200px) {
   .about {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -69,17 +69,23 @@
   .about-article h1 {
     font-size: 40px;
   }
-
+.about{
+  margin-top: -10px;
+}
   .about-content {
     font-size: 16px;
   }
-
-  .about-article h5 {
-    font-size: 28px;
+  .about-article h1:before{
+    height: 4px;
+    width: 110px;
+    bottom: 45px;
+    left: 39%;
   }
-
-  article p {
-    font-size: 16px;
+  .about-article h1:after{
+    height: 4px;
+    width: 110px;
+    top: 45px;
+    right: 39%;
   }
 }
 
@@ -88,43 +94,51 @@
   .about-article h1 {
     font-size: 35px;
   }
-
   .about-content {
     font-size: 15px;
   }
-
-  .about-article h5 {
-    font-size: 25px;
+  .about{
+    margin-top: -40px;
+   }
+  .about-article h1:before{
+    height: 4px;
+    width: 90px;
+    bottom: 40px;
+    left: 38%;
   }
-
-  article p {
-    font-size: 15px;
+  .about-article h1:after{
+    height: 4px;
+    width: 90px;
+    top: 40px;
+    right: 37%;
   }
 }
 
 /* Extra small screens */
 @media (max-width: 576px) {
-  .main-aboutus {
-    padding-top: 60px; /* Smaller top padding for smaller screens */
+  .about{
+    margin-top: -10px;
   }
-
-  .about-article h1 {
+   .about-article h1 {
     font-size: 30px;
   }
 
   .about-content {
     font-size: 14px;
   }
-
-  .about-article h5 {
-    font-size: 22px;
+  .about-article h1:before{
+    height: 4px;
+    width: 70px;
+    bottom: 35px;
+    left: 35%;
   }
-
-  article p {
-    font-size: 14px;
+  .about-article h1:after{
+    height: 4px;
+    width: 70px;
+    top: 35px;
+    right: 35%;
   }
 }
-
 /* Extra extra small screens */
 @media (max-width: 375px) {
   .about-article h1 {
@@ -132,14 +146,21 @@
   }
 
   .about-content {
-    font-size: 13px;
+    font-size: 10px;
   }
-
-  .about-article h5 {
-    font-size: 20px;
+  .about{
+   margin-top: -10px;
   }
-
-  article p {
-    font-size: 13px;
+  .about-article h1:before{
+    height: 4px;
+    width: 60px;
+    bottom: 35px;
+    left: 30%;
+  }
+  .about-article h1:after{
+    height: 4px;
+    width: 60px;
+    top: 30px;
+    right: 28%;
   }
 }
